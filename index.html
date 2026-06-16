@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega International Co., Ltd.</title>
+    <style>
+        body {
+            background-color: #2c3e50; 
+            color: #ecf0f1;           
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;   
+            align-items: center;       
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            font-weight: 300; /* 使用較細的字重，看起來更現代且不刺眼 */
+        }
+
+        .floating-group {
+            display: inline-flex;  
+            align-items: center;  
+            gap: 15px;            
+            
+            animation: gentleFloat 3s infinite ease-in-out;
+        }
+
+        .emoji {
+            font-size: 4rem;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        @keyframes gentleFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 公司名稱 -->
+        <h1>Omega International Co., Ltd.</h1>
+
+        <!-- 
+           這個 div 將笑臉和名字綁在一起。
+           CSS 動畫是套用在這裡，所以它們會「一起浮動」。
+        -->
+        <div class="floating-group">
+            <div class="emoji">🤯</div>
+            <div class="name">William</div>
+        </div>
+    </div>
+
+</body>
+</html>
