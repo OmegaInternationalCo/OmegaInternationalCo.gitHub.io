@@ -1,2 +1,2 @@
-# .github
-OmegaInternationalCo
+# omegainternationalco.github.io
+omegainternationalco.github.io
