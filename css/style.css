@@ -19,7 +19,8 @@ body {
 }
 
 .qr-code {
-    width: 25vw;
+    width: 150px;
+    max-width: 20vw;
     height: auto;
 }
 
