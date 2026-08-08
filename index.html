@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
-    <meta name="description" content="Omega International Co., Ltd."/>
-
     <meta name="robots" content="noindex,nofollow,noarchive,nosnippet"/>
     <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet"/>
     <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet"/>
     <meta name="Baiduspider" content="noindex,nofollow,noarchive"/>
     <meta name="YandexBot" content="noindex,nofollow,noarchive"/>
 
-    <title>Omega International Co., Ltd.</title>
-    <link rel="icon"
-          href="icon/Omega.svg">
+
     <meta name="title" content="Omega International Co., Ltd.">
-    <meta name="description" content="Omega International Co., Ltd.">
+    <meta name="description" content="Omega International Co., Ltd."/>
+
+    <title>Omega International Co., Ltd.</title>
+    <link rel="icon" href="icon/Omega.svg">
+
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -39,6 +39,18 @@
 
     <!-- 引入外部 CSS 檔案 -->
     <link rel="stylesheet" href="css/style.css"/>
+
+    <meta http-equiv="Content-Security-Policy"
+          content="
+          default-src 'self';
+          img-src 'self' data:;
+          style-src 'self';
+          script-src 'self';
+          object-src 'none';
+          base-uri 'self';
+          frame-ancestors 'none';
+          require-trusted-types-for 'script';"
+    >
 </head>
 
 <body>
@@ -56,7 +68,7 @@
 </body>
 
 <!-- 在 body 結束前引入外部 JS 檔案 -->
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 
 </html>
 <!--
