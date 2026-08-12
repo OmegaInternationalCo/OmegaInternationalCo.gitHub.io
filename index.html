@@ -38,18 +38,18 @@
 
 
     <!-- 引入外部 CSS 檔案 -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link integrity="sha384-VqlgShu3PE3kbr7USGYzaV+BvCgNMBQMKByGECedGu2ctRJTXqh5cN7BD/edFp+z" rel="stylesheet"
+          href="css/style.css"/>
 
     <meta http-equiv="Content-Security-Policy"
           content="
           default-src 'self';
           img-src 'self' data:;
-          style-src 'self';
-          script-src 'self';
+          style-src 'self' 'unsafe-inline';
+          script-src 'self' 'unsafe-eval' https://static.cloudflareinsights.com;
           object-src 'none';
           base-uri 'self';
-          frame-ancestors 'none';
-          require-trusted-types-for 'script';"
+          "
     >
 </head>
 
@@ -68,7 +68,9 @@
 </body>
 
 <!-- 在 body 結束前引入外部 JS 檔案 -->
-<script src="js/script.js" defer></script>
+<script integrity="sha384-rktPPgvingmZ3SNZjZZcrPxutX9TreCYk530RM9gzdcPYFyfThsrlqUfHmavHmUN"
+        src="js/script.js"
+        defer></script>
 
 </html>
 <!--
